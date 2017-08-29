@@ -3,7 +3,8 @@ DUKPT key manage for nodejs. Based on ANS X9.24-1:2009
 
 find the examples in example.js
 
-supported key type: STD, MAC, PIN, DATA
+supported key type: STD, MAC, PIN, DATA.
+
 STD has no variants applied
 MAC, PIN has variants.
 DATA has variants, and also has addtional encryption.
