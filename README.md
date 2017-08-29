@@ -5,6 +5,8 @@ find the examples in example.js
 
 supported key type: STD, MAC, PIN, DATA.
 
-STD has no variants applied
+STD has no variants applied.
+
 MAC, PIN has variants.
+
 DATA has variants, and also has addtional encryption.
