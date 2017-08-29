@@ -1,0 +1,22 @@
+{
+  "name": "dukpt",
+  "version": "1.0.0",
+  "description": "DUKPT key management",
+  "main": "dukpt.js",
+  "scripts": {
+    "start": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenyan1206/dukpt.git"
+  },
+  "keywords": [
+    "dukpt"
+  ],
+  "author": "shenyan1206",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shenyan1206/dukpt/issues"
+  },
+  "homepage": "https://github.com/shenyan1206/dukpt#readme"
+}
