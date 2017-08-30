@@ -8,9 +8,9 @@ function BufferHelper(){};
 
 
 //private functions
-function operator(buffer, mask, operator, newBuffer)
+function bitOperate(buffer, mask, operator, newBuffer)
 {
-	if(buffer.length != mask.length) throw new Error("BufferHelper Operator AND, Invalid data length");
+	if(buffer.length != mask.length) throw new Error("BufferHelper Bit Operator, Invalid data length");
 
 	var result;
 	if(newBuffer) result = Buffer.alloc(buffer.length); //new buffer
@@ -39,35 +39,20 @@ function operator(buffer, mask, operator, newBuffer)
 }
 
 //public functions
-
-//modify buffer directly
-BufferHelper.prototype.AND = function(buffer, mask) 
+BufferHelper.prototype.AND = function(buffer, mask, newBuffer=false) 
 {
-	return operator(buffer, mask, OPERATOR_AND, false);
+	return bitOperate(buffer, mask, OPERATOR_AND, newBuffer);
 }
-BufferHelper.prototype.OR = function(buffer, mask) 
+BufferHelper.prototype.OR = function(buffer, mask, newBuffer=false) 
 {
-	return operator(buffer, mask, OPERATOR_OR, false);
+	return bitOperate(buffer, mask, OPERATOR_OR, newBuffer);
 }
-BufferHelper.prototype.XOR = function(buffer, mask) 
+BufferHelper.prototype.XOR = function(buffer, mask, newBuffer=false) 
 {
-	return operator(buffer, mask, OPERATOR_XOR, false);
+	return bitOperate(buffer, mask, OPERATOR_XOR, newBuffer);
 }
 
 
-//create new buffer, modify the new buffer only
-BufferHelper.prototype.AND_new = function(buffer, mask) 
-{
-	return operator(buffer, mask, OPERATOR_AND, true);
-}
-BufferHelper.prototype.OR_new = function(buffer, mask) 
-{
-	return operator(buffer, mask, OPERATOR_OR, true);
-}
-BufferHelper.prototype.XOR_new = function(buffer, mask) 
-{
-	return operator(buffer, mask, OPERATOR_XOR, true);
-}
 
 
 /* ************************************************************************

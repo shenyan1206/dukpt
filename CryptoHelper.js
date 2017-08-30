@@ -8,7 +8,7 @@ function CryptoHelper(){
 
 };
 
-
+//private functions
 function encrypt(algorithm, key, data, iv)
 {
 	var cipher = crypto.createCipheriv(algorithm, key, iv);
@@ -109,20 +109,6 @@ CryptoHelper.prototype.generateKeyOfSize = function(size)
 	return crypto.randomBytes(size);
 }
 
-
-CryptoHelper.prototype.test = function ()
-{
-	var d = Buffer.alloc(1);
-	update(d);
-
-	console.log(d);
-
-}
-
-function update(data)
-{
-	data[0] += 1;
-}
 
 
 /* ************************************************************************
