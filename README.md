@@ -10,3 +10,8 @@ STD has no variants applied.
 MAC, PIN has variants.
 
 DATA has variants, and also has addtional encryption.
+
+
+npm start  # to start the example.js
+
+npm test   # to launch the test cases
