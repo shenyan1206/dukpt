@@ -1,6 +1,6 @@
 {
   "name": "@shenyan1206/dukpt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DUKPT key management",
   "main": "dukpt.js",
   "scripts": {
