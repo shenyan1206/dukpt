@@ -1,11 +1,11 @@
 {
-  "name": "dukpt",
+  "name": "@shenyan1206/dukpt",
   "version": "1.0.0",
   "description": "DUKPT key management",
   "main": "dukpt.js",
   "scripts": {
     "start": "node example.js",
-    "test" : "node ./test/test_dukpt.js"
+    "test": "node ./test/test_dukpt.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/shenyan1206/dukpt/issues"
   },
-  "homepage": "https://github.com/shenyan1206/dukpt#readme"
+  "homepage": "https://github.com/shenyan1206/dukpt#readme",
+  "directories": {
+    "test": "test"
+  }
 }
