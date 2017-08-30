@@ -4,7 +4,8 @@
   "description": "DUKPT key management",
   "main": "dukpt.js",
   "scripts": {
-    "start": "node example.js"
+    "start": "node example.js",
+    "test" : "node ./test/test_dukpt.js"
   },
   "repository": {
     "type": "git",
