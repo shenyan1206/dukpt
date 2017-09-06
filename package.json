@@ -1,6 +1,6 @@
 {
   "name": "@shenyan1206/dukpt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "DUKPT key management",
   "main": "dukpt.js",
   "scripts": {
@@ -22,5 +22,9 @@
   "homepage": "https://github.com/shenyan1206/dukpt#readme",
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "@shenyan1206/buffer-helper": "^1.0.1",
+    "@shenyan1206/crypto-helper": "^1.0.1"
   }
 }

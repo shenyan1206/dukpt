@@ -1,6 +1,6 @@
 var crypto = require("crypto");
-var BufferHelper = require("./BufferHelper");
-var CryptoHelper = require("./CryptoHelper");
+var BufferHelper = require("@shenyan1206/buffer-helper");
+var CryptoHelper = require("@shenyan1206/crypto-helper");
 var KeyType = require("./KeyType");
 
 
