@@ -40,8 +40,8 @@ var ksn = Buffer.from("FFFF9876543210E00011", "hex");
 
 var key_std = dukpt.GetKey(bdk, ksn, dukpt.KEY_TYPE_STD);
 var key_pin = dukpt.GetKey(bdk, ksn, dukpt.KEY_TYPE_PIN);
-var key_mac = dukpt.GetKey(bdk, ksn, dukpt.KEY_TYPE_PIN);
-var key_data = dukpt.GetKey(bdk, ksn, dukpt.KEY_TYPE_PIN);
+var key_mac = dukpt.GetKey(bdk, ksn, dukpt.KEY_TYPE_MAC);
+var key_data = dukpt.GetKey(bdk, ksn, dukpt.KEY_TYPE_DATA);
 
 console.log("key std:" + key_std.toString("hex"));
 console.log("key pin:" + key_pin.toString("hex"));
